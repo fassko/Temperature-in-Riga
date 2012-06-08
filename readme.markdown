@@ -7,12 +7,12 @@ Usage
 ---------------------
 
 Here is simple usage calls:
-    > ruby temp_meteo.rb
-    > ruby temp.rb
+    ruby temp_meteo.rb
+    ruby temp.rb
 
 Usage with extra details
 ---------------------
 
 With this You can get extra info:
-    > ruby temp_meteo.rb 1
-    > ruby temp.rb 1
+    ruby temp_meteo.rb 1
+    ruby temp.rb 1
