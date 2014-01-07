@@ -1,10 +1,13 @@
+#!/bin/env ruby
+# encoding: utf-8
+
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
 doc = Nokogiri::HTML(open('http://www.rs.lv/index.php?aid=3&id=1&action=body&print=1'))
-
-puts "Pašlaik Rīgā: " + doc.search("//font[@style='font-weight: bold;']/b").inner_html.to_s.gsub("\260","°")
+doc.encoding = 'utf-8'
+puts "Pašlaik Rīgā: " + doc.search("//font[@style='font-weight: bold;']/b").inner_html
 
 if ARGV[0]
   puts "\n"
